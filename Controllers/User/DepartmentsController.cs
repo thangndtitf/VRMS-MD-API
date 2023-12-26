@@ -19,7 +19,7 @@ namespace VRMS_MD.Controllers.User
         }
 
         [HttpPost]
-        [Route("AddNewDepartment")]
+        [Route("/AddNewDepartment")]
         public ResultObject addNewDepartment([FromBody] MdDepartment mdDepartment)
         {
             return DepartmentBLL.addNewDepartment(mdDepartment);
