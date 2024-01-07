@@ -24,5 +24,20 @@ namespace VRMS_MD.Controllers.User
         {
             return DepartmentBLL.addNewDepartment(mdDepartment);
         }
+
+        [HttpPost]
+        [Route("/UpdateDepartment")]
+        public ResultObject updateDepartment([FromBody] MdUpdateDepartment updateDepartment)
+        {
+            return DepartmentBLL.updateDepartment(updateDepartment);
+        }
+
+        [HttpPost]
+        [Route("/deleteDepartment")]
+        public ResultObject deleteDepartment([FromBody] decimal deleteDepartmentId)
+        {
+            return DepartmentBLL.deleteDepartment(deleteDepartmentId);
+        }
+
     }
 }
