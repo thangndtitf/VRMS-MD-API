@@ -5,3 +5,7 @@
 # .NET core 6
 # Entity Framework core
 # PostGresql
+
+![ERD của dự án](https://drive.google.com/file/d/1pnoq56tkTy9JxqT6XsNJ7NTrQZ_EEJfr/view?usp=sharing)
+
+
