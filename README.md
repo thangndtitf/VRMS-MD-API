@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Vehicle Rental Management System </title>
 </head>
 <body>
-    <font size="5"> Vehicle Rental Management System </font>
-    <font size="3"> Bộ API cho hệ thống quản lý thông tin của 1 công ty cho thuê xe tải </font>
+    <span style="font-size: 10px;">Bộ API cho hệ thống quản lý thông tin của 1 công ty cho thuê xe tải</span>
+   <span style="font-size: 10px;">Công nghệ sử dụng :</span>
+   <span style="font-size: 10px;">.NET core 6</span>
+   <span style="font-size: 10px;">Entity Framework core</span>
+   <span style="font-size: 10px;">PostGresql</span>
 
-    <font size="2"> Công nghệ sử dụng :</font>
-    <font size="2"> .NET core 6</font>
-    <font size="2"> Entity Framework core</font>
-    <font size="2">PostGresql</font>    
+
 </body>
 </html>
 
