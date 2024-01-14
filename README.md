@@ -6,6 +6,6 @@
 # Entity Framework core
 # PostGresql
 
-![ERD của dự án](https://drive.google.com/file/d/1pnoq56tkTy9JxqT6XsNJ7NTrQZ_EEJfr/view?usp=sharing)
+![ERD của dự án](https://github.com/thangndtitf/ImageResource/blob/main/VRMS_ERD.png)
 
 
