@@ -20,6 +20,7 @@ namespace VRMS_MD.Controllers.User
         {
             return PositionBLL.getListPosition();
         }
+
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [Route("/insertNewPosition")]
@@ -27,6 +28,7 @@ namespace VRMS_MD.Controllers.User
         {
             return PositionBLL.insertNewPosition(mdPosition);
         }
+
         [Authorize(Roles = "Admin")]
         [HttpPost]
         [Route("/updatePosition")]
