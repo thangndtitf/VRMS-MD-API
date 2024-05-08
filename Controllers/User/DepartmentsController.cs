@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 using VRMS_3layers.BLL.User;
 using VRMS_3layers.Models.ResultObj;
-using VRMS_3Layers.Models.User;
+using VRMS_3Layers.Models;
 
 namespace VRMS_MD.Controllers.User
 {

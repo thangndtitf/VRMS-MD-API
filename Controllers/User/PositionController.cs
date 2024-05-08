@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using VRMS_3layers.Models.ResultObj;
 using VRMS_3Layers.BLL.User;
-using VRMS_3Layers.Models.User;
+using VRMS_3Layers.Models;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 

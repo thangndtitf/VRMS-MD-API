@@ -3,7 +3,7 @@
 using Microsoft.AspNetCore.Mvc;
 using VRMS_3layers.BLL.Customer;
 using VRMS_3layers.Models.ResultObj;
-using VRMS_3Layers.Models.Customer;
+using VRMS_3Layers.Models;
 
 namespace VRMS_MD.Controllers.Customers
 {
