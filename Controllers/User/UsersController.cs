@@ -11,28 +11,28 @@ namespace VRMS_MD.Controllers.User
     public class UsersController : Controller
     {
         [HttpGet]
-        [Route("/getAllUser")]
+        [Route("getAllUser")]
         public ResultObject getListUser()
         {
             return UserBLL.GetListUser();
         }
 
         [HttpPost]
-        [Route("/AddNewUser")]
+        [Route("addNewUser")]
         public ResultObject addNewUser([FromBody]MdUser newUser)
         {
             return UserBLL.InsertNewUser(newUser);
         }
 
         [HttpPost]
-        [Route("/UpdateUser")]
+        [Route("updateUser")]
         public ResultObject updateUser([FromBody]MdUpdateUser updateUser)
         {
             return UserBLL.UpdateUser(updateUser);
         }
 
         [HttpPost]
-        [Route("DeleteUser")]
+        [Route("deleteUser")]
         public ResultObject deleteUser([FromBody]decimal userName)
         {
             return UserBLL.DeleteUser(userName);

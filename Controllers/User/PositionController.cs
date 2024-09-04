@@ -15,7 +15,7 @@ namespace VRMS_MD.Controllers.User
     {
         [Authorize(Roles = "Admin")]
         [HttpGet]
-        [Route("/getListPosition")]        
+        [Route("getListPosition")]        
         public ResultObject getListPosition()
         {
             return PositionBLL.getListPosition();
@@ -23,7 +23,7 @@ namespace VRMS_MD.Controllers.User
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        [Route("/insertNewPosition")]
+        [Route("insertNewPosition")]
         public ResultObject insertNewPosition([FromBody] MdPosition mdPosition)
         {
             return PositionBLL.insertNewPosition(mdPosition);
@@ -31,7 +31,7 @@ namespace VRMS_MD.Controllers.User
 
         [Authorize(Roles = "Admin")]
         [HttpPost]
-        [Route("/updatePosition")]
+        [Route("updatePosition")]
         public ResultObject updatePosition([FromBody] MdPosition mdPosition)
         {
             return PositionBLL.updatePosition(mdPosition);
@@ -39,7 +39,7 @@ namespace VRMS_MD.Controllers.User
 
         [Authorize(Roles = "Admins")]
         [HttpPost]
-        [Route("/deletePosition")]
+        [Route("deletePosition")]
         public ResultObject deletePosition([FromBody] decimal positionId)
         {
             return PositionBLL.deletePosition(positionId);

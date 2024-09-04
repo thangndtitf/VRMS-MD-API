@@ -12,28 +12,28 @@ namespace VRMS_MD.Controllers.User
     public class DepartmentsController : ControllerBase
     {
         [HttpGet]
-        [Route("/GetAllDepartment")]
+        [Route("getAllDepartment")]
         public ResultObject getListDepartment()
         {
             return DepartmentBLL.getListDepartment();
         }
 
         [HttpPost]
-        [Route("/AddNewDepartment")]
+        [Route("addNewDepartment")]
         public ResultObject addNewDepartment([FromBody] MdDepartment mdDepartment)
         {
             return DepartmentBLL.addNewDepartment(mdDepartment);
         }
 
         [HttpPost]
-        [Route("/UpdateDepartment")]
+        [Route("updateDepartment")]
         public ResultObject updateDepartment([FromBody] MdUpdateDepartment updateDepartment)
         {
             return DepartmentBLL.updateDepartment(updateDepartment);
         }
 
         [HttpPost]
-        [Route("/deleteDepartment")]
+        [Route("deleteDepartment")]
         public ResultObject deleteDepartment([FromBody] decimal deleteDepartmentId)
         {
             return DepartmentBLL.deleteDepartment(deleteDepartmentId);

@@ -14,14 +14,14 @@ namespace VRMS_MD.Controllers.Customers
         private CustomerBLL customerBll = new CustomerBLL();
 
         [HttpGet]
-        [Route("/GetListCustomers")]
+        [Route("getListCustomers")]
         public ResultObject GetListCustomers()
         {
             return customerBll.GetListCustomer();
         }
 
         [HttpPost]
-        [Route("InsertNewCus")]
+        [Route("insertNewCus")]
         public ResultObject InsertNewCustomer([FromBody] MdCustomer customer)
         {
             return customerBll.AddNewCustomer(customer);
@@ -29,14 +29,14 @@ namespace VRMS_MD.Controllers.Customers
 
 
         [HttpPost]
-        [Route("UpdateCustomer")]
+        [Route("updateCustomer")]
         public ResultObject UpdateCustomer([FromBody] MdCustomer customer)
         {
             return customerBll.UpdateCustomer(customer);
         }
 
         [HttpPost]
-        [Route("DeleteCustomer")]
+        [Route("deleteCustomer")]
         public ResultObject DeleteCustomer([FromBody] decimal customerId)
         {
             return customerBll.DeleteCustomer(customerId);
